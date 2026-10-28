@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Isaac Adegbite is a Lagos-based digital marketer building brands with strategy that works: paid media, content, funnels and data. ₦200M+ in revenue driven across D2C, B2B and consumer product brands.">
+<meta name="theme-color" content="#FFFFFF">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Isaac Adegbite | Digital Marketer">
+<meta property="og:description" content="Building brands with strategy that works. Paid media, content, funnels and data from Lagos.">
+<meta property="og:image" content="isaac-halftone.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230E1628'/%3E%3Ctext x='32' y='41' font-family='Arial,sans-serif' font-size='24' font-weight='700' fill='%23fff' text-anchor='middle'%3EIA%3C/text%3E%3C/svg%3E">
+<title>Isaac Adegbite Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: white-first, fintech-clean. Sections alternate white / faint cool grey with hairline dividers. Colour lives in a few contained blocks (dark feature card, accent chips, a yellow marker), never in full-width bands. */
+:root{
+  --bg:#FFFFFF; --soft:#F6F7FA; --ink:#0E1628; --muted:#5B6478; --line:#E6E9EF; --card:#FFFFFF;
+  --blue:#2357E6; --blue-soft:#EEF2FE; --sand:#F2B544; --sand-soft:#FDF5E3; --tan:#A87A4A;
+  --dark:#0E1628; --dark-ink:#FFFFFF; --dark-muted:#AEB6C8; --dark-line:rgba(255,255,255,.12);
+  --btn:#0E1628; --btn-ink:#FFFFFF;
+  --f-display:"Sora","Segoe UI",system-ui,sans-serif;
+  --f-body:"Instrument Sans","Segoe UI",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --noise:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .6 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --marker:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 40' preserveAspectRatio='none'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.05 .9' numOctaves='2' seed='4'/%3E%3CfeDisplacementMap in='SourceGraphic' scale='7'/%3E%3C/filter%3E%3Cpath filter='url(%23g)' d='M5 11C45 5 120 8 196 7L193 33C140 36 70 31 7 35Z' fill='%23F2B544' fill-opacity='.62'/%3E%3C/svg%3E");
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0B111E; --soft:#101828; --ink:#F1F3F7; --muted:#A3ABBC; --line:#212B3E; --card:#121B2C;
+  --blue:#7C9BFF; --blue-soft:#17223D; --sand:#F4C15E; --sand-soft:#2A2416; --tan:#D5A877;
+  --dark:#16213A; --btn:#F1F3F7; --btn-ink:#0B111E; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0B111E; --soft:#101828; --ink:#F1F3F7; --muted:#A3ABBC; --line:#212B3E; --card:#121B2C;
+  --blue:#7C9BFF; --blue-soft:#17223D; --sand:#F4C15E; --sand-soft:#2A2416; --tan:#D5A877;
+  --dark:#16213A; --btn:#F1F3F7; --btn-ink:#0B111E; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scrollbar-width:thin;scrollbar-color:var(--line) transparent;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:clamp(15.5px,1.1vw + 11px,17px);line-height:1.65;overflow-x:hidden}
+img{max-width:100%;height:auto}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);line-height:1.1;text-wrap:balance;margin:0;letter-spacing:-.025em}
+p{margin:0}
+a{color:var(--blue)}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:6px}
+.label{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* Sections */
+.sec{padding-block:clamp(64px,9vw,104px);background:var(--bg)}
+.sec.alt{background:var(--soft)}
+.sec + .sec{border-top:1px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:16px 48px;align-items:end;margin-bottom:clamp(32px,5vw,52px)}
+.sec-head>*{min-width:0}
+.sec-head h2{font-size:clamp(30px,4.2vw,46px);font-weight:700;margin-top:12px}
+.sec-head p{color:var(--muted);max-width:32em}
+@media (max-width:760px){.sec-head{grid-template-columns:1fr}}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 24px;border-radius:999px;font-family:var(--f-body);font-weight:600;font-size:15.5px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .15s ease,opacity .15s,border-color .15s;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--btn);color:var(--btn-ink)}
+.btn-primary:hover{opacity:.88}
+.btn-outline{border-color:var(--line);color:var(--ink);background:var(--card)}
+.btn-outline:hover{border-color:var(--ink)}
+.btn-sand{background:var(--sand);color:#1A1406}
+.btn-ghost-light{border-color:var(--dark-line);color:#fff}
+.btn-ghost-light:hover{border-color:var(--sand)}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+
+/* Nav */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px}
+.logo{font-family:var(--f-display);font-weight:700;font-size:18px;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:10px;min-width:0;letter-spacing:-.02em}
+.logo span{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-size:12.5px;letter-spacing:0}
+.nav-links{display:flex;gap:28px;font-size:15px}
+.nav-links a{color:var(--muted);text-decoration:none}
+.nav-links a:hover{color:var(--ink)}
+nav .btn{padding:10px 18px;font-size:14px}
+@media (max-width:860px){.nav-links{display:none}}
+@media (max-width:420px){nav .btn{padding:9px 14px;font-size:13px}.logo{font-size:16px}.logo span{width:28px;height:28px;font-size:11px}}
+
+/* Hero */
+.hero{padding-block:clamp(48px,8vw,96px) clamp(56px,8vw,96px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(40px,6vw,72px);align-items:center}
+.hero h1{font-size:clamp(38px,6.6vw,76px);font-weight:700;letter-spacing:-.035em}
+.hero h1 .accent{color:var(--blue)}
+.revenue{margin-top:24px;font-size:clamp(16px,1.4vw + 10px,19px);color:var(--muted);max-width:30em}
+.mark{display:inline-block;color:var(--ink);font-family:var(--f-display);font-weight:600;font-size:.92em;letter-spacing:-.01em;background:var(--sand-soft);border:1px solid color-mix(in srgb,var(--sand) 55%,transparent);border-radius:10px;padding:2px 11px;margin-right:4px;line-height:1.5}
+.hero .cta{margin-top:34px}
+
+.portrait{display:flex;flex-direction:column;align-items:center;gap:22px;justify-self:center;width:100%}
+.ring{position:relative;width:min(300px,100%);padding:22px}
+.circle{position:relative;aspect-ratio:1;width:100%;border-radius:50%;overflow:hidden;isolation:isolate;background:var(--blue-soft);border:1px solid var(--line)}
+.circle::after{content:"";position:absolute;inset:0;background-image:var(--noise);opacity:.18;mix-blend-mode:multiply;z-index:2;pointer-events:none}
+.circle img{position:relative;z-index:1;display:block;width:100%;margin-top:7%}
+.tag{position:absolute;z-index:3;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 13px;font-size:13px;font-weight:600;white-space:nowrap;box-shadow:0 8px 20px -12px rgba(14,22,40,.35);display:flex;align-items:center;gap:7px}
+.tag i{width:7px;height:7px;border-radius:50%;background:var(--sand);flex-shrink:0}
+.tag.t2 i,.tag.t4 i{background:var(--blue)}
+.tag.t2{top:12%;right:-14%}.tag.t3{top:46%;left:-20%}.tag.t4{bottom:8%;right:-10%}
+.who{display:flex;align-items:center;gap:12px}
+.who strong{font-family:var(--f-display);font-size:18px;font-weight:600;letter-spacing:-.02em;display:block;line-height:1.2}
+.who small{color:var(--muted);font-size:14px}
+.who .dot{width:10px;height:10px;border-radius:50%;background:#22A55B;box-shadow:0 0 0 4px color-mix(in srgb,#22A55B 20%,transparent);flex-shrink:0}
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr}
+  .portrait{flex-direction:row;justify-content:flex-start;gap:18px}
+  .ring{width:150px;padding:0}
+}
+/* On phones and tablets the tags leave the circle and become a tidy chip row */
+@media (max-width:900px){
+  .ring .tag{display:none}
+}
+.tags-row{display:none;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tags-row span{border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:7px;background:var(--card)}
+.tags-row span i{width:6px;height:6px;border-radius:50%;background:var(--sand)}
+.tags-row span:nth-child(odd) i{background:var(--blue)}
+@media (max-width:900px){.tags-row{display:flex}}
+@media (max-width:420px){.ring{width:112px}.who strong{font-size:16.5px}.who small{font-size:13px}}
+
+/* Services */
+.services{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px 24px;display:flex;flex-direction:column;gap:12px}
+.svc .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--blue-soft);color:var(--blue)}
+.svc:nth-child(even) .ic{background:var(--sand-soft);color:var(--tan)}
+.svc h3{font-size:18.5px;font-weight:600;letter-spacing:-.015em}
+.svc p{color:var(--muted);font-size:15.5px}
+@media (max-width:980px){.services{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.services{grid-template-columns:1fr}}
+
+/* Featured */
+.feature{position:relative;isolation:isolate;overflow:hidden;background:var(--dark);color:var(--dark-ink);border-radius:28px;padding:clamp(28px,5vw,56px);display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,4vw,48px);align-items:center;margin-bottom:24px}
+.feature::after{content:"";position:absolute;inset:0;background-image:var(--noise);opacity:.22;mix-blend-mode:overlay;z-index:-1;pointer-events:none}
+.feature .label{color:var(--sand)}
+.feature h3{font-size:clamp(28px,4vw,44px);font-weight:700;margin-top:12px;color:#fff}
+.feature p{color:var(--dark-muted);margin-top:16px;max-width:34em}
+.feature .cta{margin-top:28px}
+.stats{display:grid;gap:12px}
+.stat{border:1px solid var(--dark-line);background:rgba(255,255,255,.04);border-radius:16px;padding:16px 20px;display:flex;align-items:baseline;justify-content:space-between;gap:6px 16px;flex-wrap:wrap}
+.stat b{font-family:var(--f-display);font-size:clamp(26px,3.4vw,38px);font-weight:700;color:#fff;font-variant-numeric:tabular-nums;letter-spacing:-.03em;line-height:1.1}
+.stat b em{font-style:normal;color:var(--sand)}
+.stat span{color:var(--dark-muted);font-size:14.5px}
+@media (max-width:900px){.feature{grid-template-columns:1fr}}
+
+/* Case cards */
+.cases{display:grid;gap:20px}
+.case{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:clamp(22px,3.5vw,36px);display:grid;grid-template-columns:240px minmax(0,1fr);gap:24px 44px}
+.case-side{display:flex;flex-direction:column;gap:8px}
+.case-side h3{font-size:clamp(22px,2.6vw,26px);font-weight:700}
+.industry{color:var(--muted);font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.chips span{font-size:12.5px;font-weight:600;background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:3px 11px}
+.headline-stat{margin-top:14px;font-family:var(--f-display);font-weight:700;font-size:clamp(34px,4vw,44px);letter-spacing:-.03em;line-height:1}
+.headline-stat small{display:block;font-family:var(--f-body);font-weight:500;font-size:14px;color:var(--muted);letter-spacing:0;margin-top:8px;line-height:1.4}
+.case-body{display:grid;gap:22px;min-width:0}
+h4{font-family:var(--f-mono);font-weight:500;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+.case-body ul,.job ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:15.5px}
+.case-body ul li::marker,.job ul li::marker{color:var(--blue)}
+.results{background:var(--sand-soft);border-radius:16px;padding:18px 20px}
+.results ul li::marker{color:var(--tan)}
+@media (max-width:860px){.case{grid-template-columns:1fr}}
+
+/* Brands */
+.brands{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 40px}
+.brands span{font-family:var(--f-display);font-weight:700;font-size:clamp(17px,2.2vw,23px);color:var(--muted);letter-spacing:-.02em}
+.brands-label{text-align:center;margin-bottom:24px}
+
+/* Experience */
+.xp{border-top:1px solid var(--line)}
+.job{display:grid;grid-template-columns:150px minmax(0,1fr) minmax(0,1.4fr);gap:10px 32px;padding-block:26px;border-bottom:1px solid var(--line)}
+.job .when{font-family:var(--f-mono);font-size:12.5px;color:var(--muted);padding-top:4px}
+.job h3{font-size:18.5px;font-weight:600;letter-spacing:-.015em}
+.job .co{display:block;margin-top:4px;color:var(--muted);font-size:15px}
+.job .co b{color:var(--ink);font-weight:600}
+.job .desc{color:var(--muted);font-size:15.5px}
+.job .desc ul{color:var(--ink)}
+.now-pill{display:inline-block;margin-top:8px;background:var(--sand-soft);color:var(--ink);padding:2px 9px;border-radius:6px;font-weight:600;font-size:12px}
+@media (max-width:860px){.job{grid-template-columns:1fr;gap:8px}.job .desc{margin-top:6px}}
+
+/* About */
+.about{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,5vw,64px);align-items:start}
+.about h2{font-size:clamp(32px,4.8vw,54px);font-weight:700;margin-top:12px}
+.about h2 .accent{color:var(--blue)}
+.about .copy{display:grid;gap:16px;color:var(--muted);font-size:clamp(16px,1.2vw + 11px,18px);max-width:36em}
+.about .copy strong{color:var(--ink);font-weight:600}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.facts span{border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;background:var(--card)}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
+
+/* Contact */
+.contact{position:relative;isolation:isolate;overflow:hidden;background:var(--dark);border-radius:28px;padding:clamp(28px,5vw,56px);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,4vw,48px);align-items:center;color:#fff}
+.contact::after{content:"";position:absolute;inset:0;background-image:var(--noise);opacity:.22;mix-blend-mode:overlay;z-index:-1;pointer-events:none}
+.contact .label{color:var(--sand)}
+.contact h2{font-size:clamp(32px,5vw,56px);font-weight:700;color:#fff;margin-top:12px}
+.contact p{color:var(--dark-muted);margin-top:14px;max-width:30em}
+.contact .cta{margin-top:28px}
+.lines{display:grid;gap:10px}
+.line{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--dark-line);background:rgba(255,255,255,.04);border-radius:14px;padding:14px 16px}
+.line>div{min-width:0}
+.line small{display:block;font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dark-muted)}
+.line .val{color:#fff;font-weight:500;overflow-wrap:anywhere;user-select:all}
+.copy-btn{flex-shrink:0;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.28);border-radius:8px;padding:6px 11px;font-family:var(--f-mono);font-size:12px;cursor:pointer}
+.copy-btn:hover{border-color:var(--sand);color:var(--sand)}
+@media (max-width:860px){.contact{grid-template-columns:1fr}}
+@media (max-width:420px){.contact .cta .btn,.feature .cta .btn{width:100%}}
+
+footer{border-top:1px solid var(--line);padding-block:28px;color:var(--muted);font-size:14px;background:var(--bg)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+
+/* Case study page */
+.cs-top{padding-block:clamp(40px,6vw,72px) 0}
+.back{color:var(--muted);text-decoration:none;font-size:15px}
+.back:hover{color:var(--ink)}
+.cs-top h1{font-size:clamp(32px,5.4vw,60px);font-weight:700;margin-top:24px;max-width:15em;letter-spacing:-.03em}
+.cs-top .note{margin-top:12px;color:var(--muted);font-size:15px;font-style:italic}
+.cs-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:36px}
+.cs-stats div{border:1px solid var(--line);border-radius:18px;padding:18px 20px;background:var(--soft)}
+.cs-stats b{display:block;font-family:var(--f-display);font-size:clamp(26px,3.2vw,36px);font-weight:700;letter-spacing:-.03em;line-height:1.1}
+.cs-stats b em{font-style:normal;color:var(--tan)}
+.cs-stats span{color:var(--muted);font-size:14px}
+@media (max-width:860px){.cs-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.article{max-width:720px;margin:0 auto;display:grid;gap:16px;font-size:clamp(16px,1.2vw + 11px,17.5px)}
+.article h2{font-size:clamp(24px,3.2vw,32px);font-weight:700;margin-top:32px}
+.article h3{font-size:20px;font-weight:600;margin-top:14px}
+.article p,.article li{color:var(--muted)}
+.article strong{color:var(--ink)}
+.article ul{margin:0;padding-left:20px;display:grid;gap:8px}
+.article ul li::marker{color:var(--blue)}
+.callout{background:var(--sand-soft);border-left:3px solid var(--sand);border-radius:0 12px 12px 0;padding:14px 18px;color:var(--ink)!important}
+.callout b{font-family:var(--f-display)}
+.cs-end{margin-top:36px}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+/* Mid widths: keep floating tags inside the screen */
+@media (min-width:901px) and (max-width:1120px){.ring{width:min(250px,100%)}.tag.t2{right:-6%}.tag.t4{right:-2%}.tag.t3{left:-12%}}
+/* Option A: compact mobile row */
+.mini-tags{display:none;flex-wrap:wrap;gap:5px;margin-top:8px}
+.mini-tags span{font-size:11.5px;font-weight:500;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:1px 9px;line-height:1.6}
+@media (max-width:900px){
+  .hero .wrap{display:flex;flex-direction:column;align-items:stretch;gap:0}
+  .hero-text{display:contents}
+  .hero h1{order:1}
+  .hero .revenue{order:2}
+  .hero .portrait{order:3;margin-top:28px;flex-direction:row;align-items:center;justify-content:flex-start;gap:16px;justify-self:auto}
+  .hero .ring{width:88px;padding:0;flex-shrink:0}
+  .who .dot{display:none}
+  .who strong{font-size:17px}
+  .who small{font-size:13px}
+  .mini-tags{display:flex}
+  .hero .cta{order:4;margin-top:26px;gap:10px}
+  .hero .cta .btn{padding:10px 18px;font-size:14px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top"><span>IA</span>Isaac Adegbite</a>
+    <div class="nav-links">
+      <a href="#top">Home</a><a href="#services">Services</a><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </div>
+    <a class="btn btn-primary" href="#contact">Let's work together</a>
+  </div>
+</nav>
+
+<!-- ============ HOME ============ -->
+<main id="home-view">
+
+  <header class="sec hero" id="top">
+    <div class="wrap">
+      <div class="hero-text">
+        <h1>Building brands with <span class="accent">strategy that works</span></h1>
+        <p class="revenue"><span class="mark">₦200M+ in revenue</span> across D2C, B2B and consumer product brands</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#work">See my work</a>
+          <a class="btn btn-outline" href="#contact">Let's work together</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <div class="ring">
+          <div class="circle"><img src="isaac-halftone.png" alt="Isaac Adegbite"></div>
+          <span class="tag t2"><i></i>Paid Media</span>
+          <span class="tag t3"><i></i>Content</span>
+          <span class="tag t4"><i></i>Funnels</span>
+        </div>
+        <div class="who"><span class="dot"></span><div><strong>Isaac Adegbite</strong><small>Digital Marketer · Lagos</small><div class="mini-tags"><span>Paid Media</span><span>Content</span><span>Funnels</span></div></div></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="sec alt" id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="label">What I do</span><h2>How I can help</h2></div>
+        <p>Good marketing is more than running ads. I work across the whole journey, from the first time someone sees your brand to the moment they come back to buy again.</p>
+      </div>
+      <div class="services">
+        <article class="svc">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13 7l4 4"/></svg></div>
+          <h3>Content &amp; social media</h3>
+          <p>Scripts, carousels, captions and brand messaging that give people a reason to stop, follow and trust you.</p>
+        </article>
+        <article class="svc">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
+          <h3>Paid media</h3>
+          <p>Campaigns on Meta, Google, TikTok and Snapchat, built to reach the right people at a cost that makes sense.</p>
+        </article>
+        <article class="svc">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18l-7 8v6l-4 2v-8z"/></svg></div>
+          <h3>Funnels &amp; retention</h3>
+          <p>Email, SMS and WhatsApp flows that turn first-time buyers into repeat customers and bring back the ones who almost bought.</p>
+        </article>
+        <article class="svc">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg></div>
+          <h3>Data, ecommerce &amp; SEO</h3>
+          <p>Conversion tracking, customer audiences, store setup and clear reports, so every decision is based on what's actually working.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="work">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="label">Selected work</span><h2>Work I'm proud of</h2></div>
+        <p>A few brands I've worked with, what they needed, and what I delivered.</p>
+      </div>
+
+      <div class="feature">
+        <div>
+          <span class="label">Featured case study</span>
+          <h3>₦200M+ in revenue for a D2C food brand</h3>
+          <p>Over 10 months, I helped build an acquisition and retention system across paid ads, email, WhatsApp and SMS for a cloud kitchen brand. Here's how we cut acquisition costs, won customer trust and set new revenue records.</p>
+          <div class="cta"><a class="btn btn-sand" href="#food-case-study">Read the full case study</a></div>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>₦200M<em>+</em></b><span>revenue in 10 months</span></div>
+          <div class="stat"><b>60<em>%</em></b><span>lower acquisition cost</span></div>
+          <div class="stat"><b>2<em>×</em></b><span>previous best daily revenue</span></div>
+        </div>
+      </div>
+
+      <div class="cases">
+        <article class="case">
+          <div class="case-side">
+            <h3>AvanteStyle</h3>
+            <span class="industry">Premium lighting design · Lagos</span>
+            <div class="chips"><span>Digital Marketer</span><span>Social Media Marketer</span><span>Growth Partner</span></div>
+          </div>
+          <div class="case-body">
+            <div><h4>The brief</h4><p>A premium brand selling something most people only notice when it's wrong: lighting. AvanteStyle needed a stronger brand voice, a steady flow of content that teaches its audience, and a growth system to turn interest into enquiries.</p></div>
+            <div><h4>What I did</h4><ul>
+              <li>Rewrote the brand's tagline, company overview and design-process copy for investor and client materials</li>
+              <li>Planned and wrote an ongoing series of video scripts, carousels and captions on lighting design</li>
+              <li>Set up Google Ads with GA4 conversion tracking</li>
+              <li>Built a review collection system to grow the brand's Google reviews</li>
+            </ul></div>
+            <div class="results"><h4>Results</h4><ul>
+              <li>Investor-ready brand messaging used across pitch and client materials</li>
+              <li>A consistent content engine teaching the audience why lighting matters</li>
+              <li>Every paid enquiry now tracked to its source</li>
+            </ul></div>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="case-side">
+            <h3>Menofix</h3>
+            <span class="industry">Health</span>
+            <div class="chips"><span>Performance Marketer</span><span>3-month contract</span></div>
+            <div class="headline-stat">10×<small>sales vs. ad spend</small></div>
+          </div>
+          <div class="case-body">
+            <div><h4>The brief</h4><p>Menofix brought me in for a 3-month contract to own its paid campaign performance, with one job: make every naira of ad spend pay for itself many times over.</p></div>
+            <div><h4>What I did</h4><ul>
+              <li>Took full ownership of paid campaign performance from strategy to daily optimisation</li>
+              <li>Tightened audience targeting to focus spend on the people most likely to buy</li>
+              <li>Reallocated budget toward top-performing segments while scaling reach</li>
+              <li>Reported performance with clear recommendations that shaped ongoing campaign decisions</li>
+            </ul></div>
+            <div class="results"><h4>Results</h4><ul>
+              <li>Generated sales worth 10× ad spend across the contract</li>
+              <li>Lower cost per acquisition, even as reach grew</li>
+              <li>Steady month-on-month ROAS growth</li>
+            </ul></div>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="case-side">
+            <h3>OgunTechies</h3>
+            <span class="industry">Tech community &amp; education</span>
+            <div class="chips"><span>Programmes Manager</span><span>2024 – 2026</span></div>
+            <div class="headline-stat">+40%<small>community engagement in 3 months</small></div>
+          </div>
+          <div class="case-body">
+            <div><h4>The brief</h4><p>OgunTechies runs digital skills programmes and tech events for a growing community. They needed someone to run programmes end to end, fill the room at every event, and keep partners, speakers and participants moving in the same direction.</p></div>
+            <div><h4>What I did</h4><ul>
+              <li>Led digital skills acquisition cohorts from planning through to delivery</li>
+              <li>Planned and executed tech-focused events, working with speakers and partners to keep every event relevant to current tech trends</li>
+              <li>Managed digital campaigns across platforms to drive event attendance and awareness</li>
+              <li>Ran programme timelines and communications, keeping stakeholders aligned from kickoff to delivery</li>
+              <li>Led community engagement around programme activities to grow and retain the audience</li>
+              <li>Coordinated communication between partners and participants so deliverables stayed on schedule</li>
+            </ul></div>
+            <div class="results"><h4>Results</h4><ul>
+              <li>Community engagement up 40% in 3 months</li>
+              <li>A growing, returning audience across cohorts and events</li>
+              <li>Programmes delivered on schedule with partners and participants aligned</li>
+            </ul></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" style="padding-block:56px">
+    <div class="wrap">
+      <p class="label brands-label">Brands I've worked with</p>
+      <div class="brands">
+        <span>AvanteStyle</span><span>MyQuickServe</span><span>DUXAURA</span><span>Menofix</span><span>Distinction Don</span><span>OgunTechies</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="experience">
+    <div class="wrap">
+      <div class="sec-head"><div><span class="label">Experience</span><h2>Where I've worked</h2></div></div>
+      <div class="xp">
+        <div class="job">
+          <span class="when">2026 – present<br><span class="now-pill">Current</span></span>
+          <div><h3>Digital Marketer, Social Media Marketer &amp; Growth Partner</h3><span class="co"><b>AvanteStyle</b> · Lighting design</span></div>
+          <div class="desc"><p>Brand messaging, content, paid search and growth for a premium lighting design brand.</p></div>
+        </div>
+        <div class="job">
+          <span class="when">2026</span>
+          <div><h3>Ads Manager</h3><span class="co"><b>MyQuickServe Digital</b> · UK career services</span></div>
+          <div class="desc"><ul>
+            <li>Wrote a 150-piece Meta copy bank: 50 primary texts, 50 headlines and 50 descriptions</li>
+            <li>Built the audience targeting and campaign strategy for diaspora healthcare workers in England</li>
+            <li>Ran campaigns across multiple angles for the application service and ebook range</li>
+            <li>Mapped a faster customer journey, from ad to landing page to direct payment</li>
+            <li>Helped 20+ aspiring NHS professionals sign up for application support during the campaign</li>
+          </ul></div>
+        </div>
+        <div class="job">
+          <span class="when">2026</span>
+          <div><h3>Media Buyer</h3><span class="co"><b>DUXAURA</b> · Beauty, Fragrance</span></div>
+          <div class="desc"><ul>
+            <li>Set up and managed paid campaigns to maximise sales</li>
+            <li>Set up tracking events and the product catalogue from scratch</li>
+            <li>Built and tested audiences, plus video and image creatives</li>
+            <li>Wrote ad scripts, graphic copy and offer copy</li>
+            <li>Managed ad spend, scaled winning campaigns, and delivered weekly and monthly reports</li>
+          </ul></div>
+        </div>
+        <div class="job">
+          <span class="when">Apr – Jun 2026</span>
+          <div><h3>Performance Marketer</h3><span class="co"><b>Menofix</b> · Health</span></div>
+          <div class="desc"><p>Owned paid campaign performance across a 3-month contract, generating sales worth 10× ad spend with steady month-on-month ROAS growth.</p></div>
+        </div>
+        <div class="job">
+          <span class="when">2025 – 2026</span>
+          <div><h3>Digital Marketer</h3><span class="co"><b>D2C Food Brand</b> · Food</span></div>
+          <div class="desc"><p>Built acquisition and retention across paid, email, SMS and WhatsApp, contributing to ₦200M+ in revenue.</p></div>
+        </div>
+        <div class="job">
+          <span class="when">2025 – 2026</span>
+          <div><h3>Brand Communicator</h3><span class="co"><b>Distinction Don</b> · Education</span></div>
+          <div class="desc"><ul>
+            <li>Designed and executed a digital content strategy that grew engagement 10× within 6 weeks</li>
+            <li>Defined the brand voice and communication style across every marketing touchpoint</li>
+            <li>Managed cross-platform campaigns on Instagram, Facebook and X to grow visibility and trust</li>
+            <li>Wrote content and messaging that grew audience engagement and brand visibility</li>
+            <li>Strengthened positioning through consistent storytelling and community interaction</li>
+            <li>Partnered with stakeholders to keep messaging consistent across campaigns, launches and content</li>
+          </ul></div>
+        </div>
+        <div class="job">
+          <span class="when">2024 – 2026</span>
+          <div><h3>Programmes Manager</h3><span class="co"><b>OgunTechies</b> · Tech community</span></div>
+          <div class="desc"><p>Led digital skills cohorts and tech events end to end, growing community engagement by 40% in 3 months.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="about">
+    <div class="wrap about">
+      <div>
+        <span class="label">About me</span>
+        <h2>Strategy first. <span class="accent">Then everything else.</span></h2>
+      </div>
+      <div>
+        <div class="copy">
+          <p>I'm <strong>Isaac</strong>, and I'm in my third year building brands across media and marketing. In that time I've worked with brands in food, lighting, fragrance, health, education and tech, and helped healthcare workers start careers in the UK.</p>
+          <p>The products are different, but my approach stays the same. I start with strategy: who the customer is, what makes them buy, and what's stopping them. Then I build everything around it: the content, the ads, the funnels and the follow-up. <strong>Strategy is what makes the rest work.</strong></p>
+          <p>I know the Nigerian market from the inside: how people talk, scroll and decide to buy. I've also run campaigns for audiences in the UK.</p>
+        </div>
+        <div class="facts"><span>3rd year in media &amp; marketing</span><span>Nigeria &amp; UK markets</span><span>7 brands</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <span class="label">Contact</span>
+          <h2>Let's work together</h2>
+          <p>Tell me about your brand, what you're selling and who you want to reach. I usually reply within 24 hours.</p>
+          <div class="cta">
+            <a class="btn btn-sand" href="https://wa.me/2347039197409" target="_blank" rel="noopener">Chat on WhatsApp</a>
+            <a class="btn btn-ghost-light" href="mailto:adegbiteisaac03@gmail.com">Send an email</a>
+          </div>
+        </div>
+        <div class="lines">
+          <div class="line"><div><small>Email</small><span class="val">adegbiteisaac03@gmail.com</span></div><button class="copy-btn" id="copy-email" data-v="adegbiteisaac03@gmail.com">Copy</button></div>
+          <div class="line"><div><small>Phone / WhatsApp</small><span class="val">+234 703 919 7409</span></div><button class="copy-btn" id="copy-phone" data-v="+2347039197409">Copy</button></div>
+          <div class="line"><div><small>Location</small><span class="val">Lagos, Nigeria · working with brands anywhere</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ CASE STUDY ============ -->
+<main id="case-view" hidden>
+  <section class="sec cs-top">
+    <div class="wrap">
+      <a class="back" href="#work">← Back to portfolio</a>
+      <h1>₦200M+ in Revenue in 10 Months for a D2C Food Brand</h1>
+      <p class="note">The brand name has been withheld.</p>
+      <div class="cs-stats">
+        <div><b>₦200M<em>+</em></b><span>revenue in 10 months</span></div>
+        <div><b>60<em>%</em></b><span>lower CAC</span></div>
+        <div><b>2<em>×</em></b><span>best daily revenue</span></div>
+        <div><b>~80<em>%</em></b><span>cart recovery</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="sec" style="border-top:0">
+    <div class="wrap">
+      <article class="article">
+        <span class="label">Overview</span>
+        <p>Over 10 months, I helped build a system that turned leads into paying customers across four acquisition and retention channels. This case study walks through my approach and the strategies that helped the brand close more than ₦200M in revenue.</p>
+
+        <h2>The customer journey</h2>
+        <p>The brand ran as a cloud kitchen, with no walk-ins and no pickups. Operations were simple: order request, order processing, delivery. Our acquisition channels needed to match that simplicity.</p>
+        <p>The two touchpoints that turned leads into buyers were the website and WhatsApp DMs. With no physical location, paid media was our most important channel for filling the funnel, and that's where the first problems started.</p>
+
+        <h2>The challenge</h2>
+        <p>The brand already had an SEO-optimised website and a familiar name, built first on its founders' personal networks. That wasn't a problem in itself, but it raised a big question: could the business thrive beyond that circle?</p>
+        <p>Three areas were holding it back: <strong>Meta Ads, email marketing and brand trust.</strong></p>
+        <h3>Meta Ads</h3>
+        <ul>
+          <li>Volume problem: more enquiries didn't translate into more orders.</li>
+          <li>Unprofitable costs that didn't lift daily order volume.</li>
+          <li>A campaign structure working against itself: fatigued creatives, fragmented ads, and no clear line between scaling to new customers and getting more value from existing ones.</li>
+        </ul>
+        <h3>Email marketing</h3>
+        <ul>
+          <li>Customers joined the list and stayed there, with no upsells and no effort to increase lifetime value.</li>
+          <li>Order confirmation, delivery status and follow-up emails weren't automated.</li>
+        </ul>
+        <h3>Brand trust</h3>
+        <ul>
+          <li>Buying food from a brand you can't see or visit is a hard sell. Many potential customers hesitated because they didn't know who was cooking their food or how it was made.</li>
+        </ul>
+
+        <h2>What I did</h2>
+        <h3>Meta Ads</h3>
+        <ul>
+          <li>Built a full-funnel structure, testing and optimising separate top, middle and bottom-of-funnel audiences.</li>
+          <li>Made the case for a bigger budget across all paid channels, not just Meta.</li>
+          <li>Consolidated campaigns and ad sets so the algorithm had room to learn.</li>
+          <li>Built a copy library for continuous testing, keeping creatives fresh and out of fatigue.</li>
+        </ul>
+        <p class="callout"><b>Result:</b> Average CAC dropped by 60%, from ₦1,000 to ₦400, and quality leads rose by about 10% at launch.</p>
+
+        <h3>Email marketing and cart recovery</h3>
+        <ul>
+          <li>Built a three-step recovery process for abandoned carts: an automated email, then a WhatsApp message, then a phone call. Because we handled around 10 abandoned carts a week, every one got a personal follow-up, and we recovered about 8 in 10 within 12 hours.</li>
+          <li>Automated order details and progress updates so customers always knew where their food was.</li>
+          <li>Built a re-engagement flow to win back lapsed customers and upsell them.</li>
+        </ul>
+        <p class="callout"><b>Result:</b> Email drove more than 6% of monthly revenue.</p>
+
+        <h3>Brand trust</h3>
+        <p>I led a founder-fronted campaign that told the brand's story without a filter. We followed it with a trust campaign showing customers exactly how their meals are made from start to finish, built around two promises: "ingredients freshly sourced from the market" and "every meal prepared to your order."</p>
+        <p class="callout"><b>Result:</b> Run across all owned and paid channels, these campaigns doubled the brand's previous best daily revenue.</p>
+
+        <h2>The bigger picture</h2>
+        <p>Working with the team, I combined paid channels (Meta, Google, Snapchat, and later TikTok) with owned channels (Instagram, WhatsApp follow-ups, email, SMS and day-specific offers) into one acquisition and retention system.</p>
+        <p>When we introduced TikTok, it increased website sessions by more than 50% and lifted total orders by 30% in its first week.</p>
+        <p><strong>Together, these efforts helped the brand close more than ₦200M in revenue within 10 months.</strong></p>
+
+        <div class="cta cs-end">
+          <a class="btn btn-primary" href="#contact">Let's work together</a>
+          <a class="btn btn-outline" href="#work">Back to portfolio</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Isaac Adegbite</span><span>Building brands with strategy that works</span></div></footer>
+
+<script>
+(function(){
+  var home=document.getElementById('home-view'), cs=document.getElementById('case-view');
+  function route(){
+    var h=location.hash.slice(1), isCase=h==='food-case-study';
+    home.hidden=isCase; cs.hidden=!isCase;
+    if(isCase){window.scrollTo(0,0);return}
+    var el=h&&document.getElementById(h);
+    if(el) requestAnimationFrame(function(){el.scrollIntoView()});
+  }
+  window.addEventListener('hashchange',route); route();
+  document.querySelectorAll('.copy-btn').forEach(function(b){
+    b.addEventListener('click',function(){
+      function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1600)}
+      function fallback(){var v=b.parentElement.querySelector('.val');var r=document.createRange();r.selectNodeContents(v);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected'}
+      try{navigator.clipboard.writeText(b.dataset.v).then(done,fallback)}catch(e){fallback()}
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
